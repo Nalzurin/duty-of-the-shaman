@@ -1,0 +1,474 @@
+[gd_scene load_steps=31 format=3 uid="uid://bl5vo80l5bvff"]
+
+[ext_resource type="Script" path="res://GameScript.gd" id="1_0o85p"]
+[ext_resource type="FontFile" uid="uid://pc2wdawtle8u" path="res://clacon2.ttf" id="2_qpjaw"]
+[ext_resource type="Texture2D" uid="uid://3tcd7uejf4iq" path="res://backdrop.png" id="2_xd53t"]
+[ext_resource type="Texture2D" uid="uid://cwinpomhyqyyh" path="res://Sprite-0001-Sheet.png" id="3_f3nn8"]
+[ext_resource type="Texture2D" uid="uid://cu324t8qw20y" path="res://moon.png" id="3_gq585"]
+[ext_resource type="Texture2D" uid="uid://0f1xlsbj50b2" path="res://Sprite-0006.png" id="3_lylpg"]
+[ext_resource type="Texture2D" uid="uid://b2d01t4dmsc1e" path="res://Sprite-0004.png" id="4_a8kq3"]
+[ext_resource type="Texture2D" uid="uid://6jc4lt2o758u" path="res://shaman_dead.png" id="6_gc65o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1po7g"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnug0"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08vx4"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bo7d2"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31lmq"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwa6h"]
+atlas = ExtResource("3_lylpg")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bebev"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1po7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnug0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08vx4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bo7d2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31lmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwa6h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5k7d"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgrlc"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd80s"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jsbm"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv0kw"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdcm6"]
+atlas = ExtResource("4_a8kq3")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8yx1o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5k7d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgrlc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd80s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jsbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv0kw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdcm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5k7d")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh30a"]
+atlas = ExtResource("3_f3nn8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm27m"]
+atlas = ExtResource("3_f3nn8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2ebn"]
+atlas = ExtResource("3_f3nn8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbc5h"]
+atlas = ExtResource("3_f3nn8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i22if"]
+atlas = ExtResource("3_f3nn8")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ua667"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh30a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm27m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2ebn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbc5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i22if")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh30a")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_lfasw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vxwht"]
+bg_color = Color(0.129412, 0.0941176, 0.117647, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("MainMenu", "LetterContainer", "LetterLabel", "cam", "NewLetterDelayTimer", "Congregation", "ShamanDead1", "ShamanDead2", "ShamanDead3", "Shaman1", "Shaman2", "Shaman3", "EndScreen", "EndLabel", "Moon")]
+script = ExtResource("1_0o85p")
+MainMenu = NodePath("CanvasLayer/Main Menu")
+LetterContainer = NodePath("CanvasLayer/LetterContainer/PanelContainer")
+LetterLabel = NodePath("CanvasLayer/LetterContainer/PanelContainer/Label")
+cam = NodePath("Camera2D")
+NewLetterDelayTimer = NodePath("Node/NewLetterDelayTimer")
+Congregation = NodePath("Congregation")
+ShamanDead1 = NodePath("Congregation/ShamanDead3")
+ShamanDead2 = NodePath("Congregation/ShamanDead2")
+ShamanDead3 = NodePath("Congregation/ShamanDead1")
+Shaman1 = NodePath("Congregation/Shaman")
+Shaman2 = NodePath("Congregation/Shaman2")
+Shaman3 = NodePath("Congregation/Shaman3")
+EndScreen = NodePath("CanvasLayer/EndScreen")
+EndLabel = NodePath("CanvasLayer/EndScreen/Label")
+Moon = NodePath("Moon")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(640, 400)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_xd53t")
+expand_mode = 2
+
+[node name="Bonfire" type="AnimatedSprite2D" parent="."]
+position = Vector2(317, 285)
+sprite_frames = SubResource("SpriteFrames_bebev")
+autoplay = "default"
+
+[node name="Moon" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(322, 34)
+texture = ExtResource("3_gq585")
+
+[node name="Congregation" type="Node" parent="."]
+
+[node name="Tribesman" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(359, 310)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame = 5
+frame_progress = 1.0
+speed_scale = 2.0
+
+[node name="Tribesman2" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(342, 319)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman3" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(351, 328)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman4" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(369, 328)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman5" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(327, 330)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman6" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(338, 343)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman7" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(315, 341)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman8" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(308, 322)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman9" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(292, 324)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman10" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(273, 316)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman11" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(280, 328)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame_progress = 0.725186
+speed_scale = 2.0
+
+[node name="Tribesman12" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(264, 335)
+sprite_frames = SubResource("SpriteFrames_8yx1o")
+frame = 5
+frame_progress = 1.0
+speed_scale = 2.0
+
+[node name="Shaman" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(314, 299)
+sprite_frames = SubResource("SpriteFrames_ua667")
+frame = 4
+frame_progress = 1.0
+
+[node name="Shaman2" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(342, 285)
+sprite_frames = SubResource("SpriteFrames_ua667")
+frame = 4
+frame_progress = 1.0
+
+[node name="Shaman3" type="AnimatedSprite2D" parent="Congregation"]
+position = Vector2(291, 285)
+sprite_frames = SubResource("SpriteFrames_ua667")
+frame = 4
+frame_progress = 1.0
+
+[node name="ShamanDead1" type="Sprite2D" parent="Congregation"]
+visible = false
+position = Vector2(291, 285)
+texture = ExtResource("6_gc65o")
+
+[node name="ShamanDead2" type="Sprite2D" parent="Congregation"]
+visible = false
+position = Vector2(342, 286)
+texture = ExtResource("6_gc65o")
+
+[node name="ShamanDead3" type="Sprite2D" parent="Congregation"]
+visible = false
+position = Vector2(314, 299)
+texture = ExtResource("6_gc65o")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Main Menu" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.0
+offset_top = 32.0
+offset_right = 144.0
+offset_bottom = 72.0
+grow_horizontal = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Main Menu"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/normal_font = ExtResource("2_qpjaw")
+theme_override_font_sizes/normal_font_size = 32
+text = "Duty of the Shaman"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Button" type="Button" parent="CanvasLayer/Main Menu"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+text = "Begin"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/Main Menu"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/normal_font = ExtResource("2_qpjaw")
+theme_override_font_sizes/normal_font_size = 32
+text = "Difficulty"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Main Menu"]
+layout_mode = 2
+
+[node name="EasyButton" type="Button" parent="CanvasLayer/Main Menu/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Slower button timings and less butons in the ritual"
+theme_override_colors/font_outline_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+button_group = SubResource("ButtonGroup_lfasw")
+text = "Easy"
+
+[node name="NormalButton" type="Button" parent="CanvasLayer/Main Menu/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Normal button timings, intended experience"
+theme_override_colors/font_outline_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_lfasw")
+text = "Normal"
+
+[node name="HardButton" type="Button" parent="CanvasLayer/Main Menu/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Faster button speed and more buttons in the ritual"
+theme_override_colors/font_outline_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+button_group = SubResource("ButtonGroup_lfasw")
+text = "Hard"
+
+[node name="EndScreen" type="VBoxContainer" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.0
+offset_top = 32.0
+offset_right = 144.0
+offset_bottom = 132.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/EndScreen"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_shadow_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+text = "Victory!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/EndScreen"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.101961, 0, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+text = "Return"
+
+[node name="LetterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -60.0
+offset_right = 15.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/LetterContainer"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vxwht")
+
+[node name="Label" type="Label" parent="CanvasLayer/LetterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qpjaw")
+theme_override_font_sizes/font_size = 32
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node" type="Node" parent="."]
+
+[node name="NewLetterDelayTimer" type="Timer" parent="Node"]
+one_shot = true
+
+[connection signal="pressed" from="CanvasLayer/Main Menu/Button" to="." method="_begin_game"]
+[connection signal="toggled" from="CanvasLayer/Main Menu/HBoxContainer/EasyButton" to="." method="_on_easy_button_toggled"]
+[connection signal="toggled" from="CanvasLayer/Main Menu/HBoxContainer/NormalButton" to="." method="_on_normal_button_toggled"]
+[connection signal="toggled" from="CanvasLayer/Main Menu/HBoxContainer/HardButton" to="." method="_on_hard_button_toggled"]
+[connection signal="pressed" from="CanvasLayer/EndScreen/Button" to="." method="return_menu"]
+[connection signal="timeout" from="Node/NewLetterDelayTimer" to="." method="_NewLetterDelayTimer_timeout"]
